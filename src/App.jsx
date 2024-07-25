@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import axios from 'axios';
 import MovieCard from './MovieCard';
@@ -10,7 +9,7 @@ const App = () => {
 
   const searchMovies = async (e) => {
     e.preventDefault();
-    const response = await axios.get(`http://www.omdbapi.com/?s=${query}&apikey=8bf57de5`);
+    const response = await axios.get(`http://www.omdbapi.com/?s=${query}&apikey=ed637239`);
     setMovies(response.data.Search || []);
   };
 
